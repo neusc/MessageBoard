@@ -93,7 +93,7 @@ body {
     height: 28px;
     border: 1px solid #f60;
     opacity: 1;
-    filter: alpha(opacity=100);
+    filter: alpha(opacity=100);     /*兼容IE*/
 }
 
 #sendBtn {
@@ -106,7 +106,7 @@ body {
 }
 
 #sendBtn.hover {
-    background-position: 0 -30px;
+    background-position: 0 -30px;   /*以图片左上角为原点,负号表示分别向左或向上偏移*/
 }
 
 #msgBox form .maxNum {
@@ -152,6 +152,7 @@ body {
     overflow: hidden;
 }
 
+/*鼠标滑过留言列表背景颜色改变*/
 #msgBox .list ul li.hover {
     background: #f5f5f5;
 }
